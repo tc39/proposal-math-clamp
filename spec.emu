@@ -21,7 +21,6 @@ contributors: Oliver Medhurst, Richie Bendall
         1. If _value_ is not a Number, throw a *TypeError* exception.
         1. If _min_ is not a Number, throw a *TypeError* exception.
         1. If _max_ is not a Number, throw a *TypeError* exception.
-        1. If _min_ is *+0*<sub>𝔽</sub> and _max_ is *-0*<sub>𝔽</sub>, throw a *RangeError* exception.
         1. If _min_ is *NaN*, return *NaN*.
         1. If _max_ is *NaN*, return *NaN*.
         1. If _value_ is *NaN*, return *NaN*.
