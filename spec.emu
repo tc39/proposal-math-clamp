@@ -11,7 +11,7 @@ contributors: Oliver Medhurst, Richie Bendall
 
 <emu-intro id="intro">
 	<h1>Introduction</h1>
-	<p><a href="https://github.com/CanadaHonk/proposal-math-clamp">`Math.clamp()` constrains a value between an upper and lower bound.</a></p>
+	<p><a href="https://github.com/tc39/proposal-math-clamp">`Math.clamp()` constrains a value between an upper and lower bound.</a></p>
 </emu-intro>
 
 <emu-clause id="sec-math.clamp">
