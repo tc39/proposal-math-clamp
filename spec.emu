@@ -4,18 +4,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
 <script src="./spec.js"></script>
 <pre class="metadata">
-title: Math.clamp
+title: Math.prototype.clamp
 stage: 2
 contributors: Oliver Medhurst, Richie Bendall
 </pre>
 
 <emu-intro id="intro">
 	<h1>Introduction</h1>
-	<p><a href="https://github.com/tc39/proposal-math-clamp">`Math.clamp()` constrains a value between an upper and lower bound.</a></p>
+	<p><a href="https://github.com/tc39/proposal-math-clamp">`Math.prototype.clamp()` constrains a value between an upper and lower bound.</a></p>
 </emu-intro>
 
 <emu-clause id="sec-math.clamp">
-	<h1>Math.clamp ( _value_, _min_, _max_ )</h1>
+	<h1>Math.prototype.clamp ( _value_, _min_, _max_ )</h1>
 	<p>This function returns the Number value that is the result of constraining _number_ between the bounds defined by _min_ and _max_.</p>
 	<emu-alg>
         1. If _value_ is not a Number, throw a *TypeError* exception.

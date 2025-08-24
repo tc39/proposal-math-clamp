@@ -1,6 +1,6 @@
-# `Math.clamp`
+# `Math.prototype.clamp`
 
-A TC39 proposal to add `Math.clamp`: a function that constrains a value between an upper and lower bound.
+A TC39 proposal to add `Math.prototype.clamp`: a function that constrains a value between an upper and lower bound.
 
 ## Status
 
@@ -72,29 +72,29 @@ The original proposal intended to have the `min` and `max` arguments optional an
 The proposed API allows a developer to clamp numbers like:
 
 ```js
-Math.clamp(5, 0, 10) // 5
-Math.clamp(-5, 0, 10) // 0
-Math.clamp(15, 0, 10) // 10
+(5).clamp(0, 10) // 5
+(-5).clamp(0, 10) // 0
+(15).clamp(0, 10) // 10
 ```
 
 It supports `-Infinity`/`Infinity` to specify when there is no upper or lower bound, although `Math.min`/`Math.max` are also already available to use:
 ```js
-Math.clamp(5, 0, Infinity) === Math.max(5, 0) // 5
-Math.clamp(-5, -Infinity, 10) === Math.min(-5, 10) // -5
+(5).clamp(0, Infinity) === Math.max(5, 0) // 5
+(-5).clamp(-Infinity, 10) === Math.min(-5, 10) // -5
 ```
 
 If the minimum bound is larger than the maximum bound, it throws a `RangeError` to avoid possible developer confusion:
 
 ```js
-Math.clamp(10, 5, 0) // RangeError
+(10).clamp(5, 0) // RangeError
 ```
 
 It also correctly respects `-0` if given:
 
 ```js
-Math.clamp(-2, -0, 10) // -0
-Math.clamp(-0, -0, 10) // -0
-Math.clamp(0, -0, 10) // 0
+(-2).clamp(-0, 10) // -0
+(-0).clamp(-0, 10) // -0
+(0).clamp(-0, 10) // 0
 ```
 
 ## Specification
