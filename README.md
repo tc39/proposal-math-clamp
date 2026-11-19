@@ -51,6 +51,7 @@ We name it the function `clamp`, like how it is in other programming languages..
 - [`clamp`](https://api.dart.dev/stable/2.14.4/dart-core/num/clamp.html) in Dart
 - [`clamp`](https://ruby-doc.org/core-2.4.0/Comparable.html#method-i-clamp) in Ruby
 - [`clamp`](https://package.elm-lang.org/packages/elm/core/latest/Basics#clamp) in Elm
+- [`clamp`](https://www.php.net/manual/en/function.clamp.php) in PHP
 
 ...and userland implementations:
 
